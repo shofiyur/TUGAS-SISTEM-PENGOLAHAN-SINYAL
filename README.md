@@ -1,3 +1,5 @@
+tulis penjelasan detail di laporan
+
 ![image](https://github.com/user-attachments/assets/c1e5de6e-2045-4a10-8f0e-eb0d2d3e8a22)
 
 
