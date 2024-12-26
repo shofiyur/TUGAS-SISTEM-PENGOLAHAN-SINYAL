@@ -7,10 +7,16 @@ With the rapid advancement of artificial intelligence (AI) technologies in voice
 Developers:
 
 Muhammad Hadid Qushairi (2042231025)
+
 Mochammad Shofiyur Rochman (2042231031)
+
 Maulidan Arridlo (2042231059)
+
 Wildan Rizki Auzay (2042231061)
+
 Ahmad Radhy (Supervisor)
+
+
 Features:
 
 Intuitive User Interface: Developed using PyQt5 to ensure a responsive and user-friendly experience.
@@ -28,6 +34,7 @@ Machine Learning Frameworks: Scikit-learn (Random Forest), TensorFlow/Keras (CNN
 Visualization Tools: PyQtGraph
 Project Management: GitHub
 Installation Steps:
+
 
 Clone the Repository:
 
@@ -62,6 +69,7 @@ scikit-learn
 Usage Instructions:
 
 Run the Application: Launch the application to access the user interface.
+
 
 Configure Parameters:
 
