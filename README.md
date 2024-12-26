@@ -1,3 +1,5 @@
+![Screenshot 2024-12-24 012908](https://github.com/user-attachments/assets/21e53d79-9e2a-4998-982f-aef2c9952a9b)
+
 DEVELOPMENT OF SOFTWARE FOR DETECTING AI-GENERATED SYNTHETIC VOICES BASED ON MACHINE LEARNING CONVOLUTIONAL NEURAL NETWORK (CNN) AND RANDOM FOREST (RF)
 
 With the rapid advancement of artificial intelligence (AI) technologies in voice processing, synthetic voices have become increasingly indistinguishable from human speech. This evolution poses significant challenges for voice-based authentication systems, as the heightened false acceptance rate threatens cybersecurity and undermines public trust in digital information. To address this issue, we have developed a software solution capable of analyzing and distinguishing between AI-generated and human voices with high precision.
@@ -88,4 +90,5 @@ Contact Information:
 Email: Shofiyur2015@gmail.com
 LinkedIn: linkedin.com/in/Mochamad-Shofiyur-Rochman
 GitHub: github.com/ShofiyurRochman
+
 This software leverages advanced machine learning techniques to enhance the security and reliability of voice-based authentication systems by effectively distinguishing between synthetic and human-generated voices. The integration of Convolutional Neural Networks and Random Forest algorithms ensures high accuracy and robustness, addressing critical challenges in the realm of cybersecurity and digital trust.
