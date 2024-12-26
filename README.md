@@ -1,51 +1,52 @@
-tulis penjelasan detail di laporan
+DEVELOPMENT OF SOFTWARE FOR DETECTING AI-GENERATED SYNTHETIC VOICES BASED ON MACHINE LEARNING CONVOLUTIONAL NEURAL NETWORK (CNN) AND RANDOM FOREST (RF)
 
-![image](https://github.com/user-attachments/assets/c1e5de6e-2045-4a10-8f0e-eb0d2d3e8a22)
+With the rapid advancement of artificial intelligence (AI) technologies in voice processing, synthetic voices have become increasingly indistinguishable from human speech. This evolution poses significant challenges for voice-based authentication systems, as the heightened false acceptance rate threatens cybersecurity and undermines public trust in digital information. To address this issue, we have developed a software solution capable of analyzing and distinguishing between AI-generated and human voices with high precision.
 
+Developers:
 
-PENGEMBANGAN SOFTWARE PENDETEKSI SUARA SINTESIS HASIL GENERATE AI BERBASIS MACHINE LEARNING CONVOLUTIONAL NEURAL NETWORK (CNN) DAN RANDOM FOREST (RF)
+Muhammad Hadid Qushairi (2042231025)
+Mochammad Shofiyur Rochman (2042231031)
+Maulidan Arridlo (2042231059)
+Wildan Rizki Auzay (2042231061)
+Ahmad Radhy (Supervisor)
+Features:
 
-Dengan perkembangan pesat teknologi kecerdasan buatan (AI) dalam pengolahan suara, suara sintetis kini semakin mirip dengan suara manusia. Hal ini menimbulkan tantangan serius dalam sistem otentikasi berbasis suara, karena risiko meningkatnya tingkat penerimaan yang salah (false acceptance rate) dapat mengancam keamanan siber dan kepercayaan publik terhadap informasi digital. Untuk mengatasi masalah ini, kami mengembangkan perangkat lunak yang mampu menganalisis dan membedakan suara yang dihasilkan oleh AI dan manusia dengan akurasi tinggi.
+Intuitive User Interface: Developed using PyQt5 to ensure a responsive and user-friendly experience.
+Audio Recording and Playback: Capable of real-time audio recording or loading existing audio files for analysis.
+Signal Visualization: Real-time plotting of original audio signals and their Discrete Fourier Transform (DFT).
+Voice Classification (AI vs. Human): Utilizes Random Forest and Convolutional Neural Network (CNN) models to accurately differentiate between AI-generated and human voices.
+Model Training: Allows users to add audio files to train the Random Forest and CNN models as needed.
+Edge Impulse Integration: Facilitates the uploading of audio files to Edge Impulse for enhanced analysis.
+Technologies Used:
 
-Pengembang;
-1.	MUHAMMAD HADID QUSHAIRI (2042231025)
-2.	MOCHAMMAD SHOFIYUR ROCHMAN (2042231031)
-3.	MAULIDAN ARRIDLO (2042231059)
-4.	WILDAN RIZKI AUZAY (2042231061)
-5.  Ahmad Radhy (Supervisor)
+Programming Language: Python
+GUI Framework: PyQt5
+Audio Analysis Libraries: Librosa, SoundDevice, SoundFile
+Machine Learning Frameworks: Scikit-learn (Random Forest), TensorFlow/Keras (CNN)
+Visualization Tools: PyQtGraph
+Project Management: GitHub
+Installation Steps:
 
-Fitur;
+Clone the Repository:
 
-Antarmuka Pengguna Intuitif: Dibangun dengan PyQt5 untuk pengalaman pengguna yang responsif dan menarik.
-Perekaman dan Pemutaran Audio: Rekam audio secara real-time atau muat file audio untuk analisis.
-Visualisasi Sinyal: Plot sinyal asli dan Transformasi Fourier Diskrit (DFT) secara real-time.
-Klasifikasi Suara AI dan Manusia: Gunakan model Random Forest dan Convolutional Neural Network (CNN) untuk membedakan suara AI dan manusia dengan akurasi tinggi.
-Pelatihan Model AI: Tambahkan file audio untuk melatih model Random Forest dan CNN sesuai kebutuhan.
-Integrasi Edge Impulse: Unggah audio ke Edge Impulse untuk analisis lebih lanjut.
-
-Teknologi yang digunakan;
-
-Bahasa Pemrograman: Python
-Framework GUI: PyQt5
-Analisis Audio: Librosa, SoundDevice, SoundFile
-Pembelajaran Mesin: Scikit-learn (Random Forest), TensorFlow/Keras (CNN)
-Visualisasi: PyQtGraph
-Manajemen Proyek: GitHub
-
-Langkah langkah;
-
-Clone Repository
+bash
+Copy code
 git clone https://github.com/username/repo-name.git
 cd repo-name
+Create a Virtual Environment (Optional):
 
-Buat Virtual Environment (Opsional)
+bash
+Copy code
 python -m venv venv
-source venv/bin/activate  # Untuk Windows: venv\Scripts\activate
+source venv/bin/activate  # For Windows: venv\Scripts\activate
+Install Dependencies:
 
-Instal Dependensi;
+bash
+Copy code
 pip install -r requirements.txt
+requirements.txt:
 
-requirements.txt;
+Copy code
 numpy
 sounddevice
 soundfile
@@ -56,26 +57,35 @@ joblib
 librosa
 tensorflow
 scikit-learn
+Usage Instructions:
 
-Penggunaan;
-1. Jalankan Aplikasi
-2. Antarmuka Pengguna
-Parameters: Atur perangkat audio, amplitudo, laju sampling, frekuensi, dan interval pembaruan.
-Plot Sinyal: Visualisasi sinyal asli dan DFT.
-Analysis Results: Tampilkan hasil klasifikasi suara sebagai AI atau Human.
-Training AI Models: Tambahkan file audio untuk melatih model Random Forest dan CNN.
-Upload to Edge Impulse: Unggah file audio ke platform Edge Impulse untuk analisis lebih lanjut.
-3. Langkah-Langkah Analisis
-Rekam atau Muat Audio: Rekam audio langsung atau muat file audio yang sudah ada.
-Visualisasi: Lihat sinyal asli dan DFT dari audio.
-Klasifikasi: Klik "Analyze" untuk membedakan suara sebagai AI atau Human.
-Lihat Hasil: Hasil klasifikasi akan ditampilkan dengan probabilitas di Progress Bar.
-4. Melatih Model AI
-Tambah File Audio: Klik "Add Human Audio Files" dan "Add AI Audio Files" untuk menambahkan dataset pelatihan.
-Mulai Pelatihan: Klik "Train AI" untuk melatih model Random Forest dan CNN. Status pelatihan akan ditampilkan di antarmuka.
+Run the Application: Launch the application to access the user interface.
 
-KONTAK;
+Configure Parameters:
+
+Audio Devices: Select input and output devices.
+Amplitude: Adjust the audio amplitude levels.
+Sampling Rate: Set the sampling rate for audio processing.
+Frequency: Define the frequency parameters.
+Update Interval: Specify the intervals for updating visualizations.
+Visualize Signals:
+
+Original Signal: View the raw audio waveform.
+Discrete Fourier Transform (DFT): Analyze the frequency components of the audio signal in real-time.
+Classify Voice:
+
+Click the "Analyze" button to classify the voice as either AI-generated or human.
+View the classification results along with probability scores displayed on a progress bar.
+Train AI Models:
+
+Add Audio Files: Use the "Add Human Audio Files" and "Add AI Audio Files" options to include datasets for training.
+Initiate Training: Click "Train AI" to commence training of the Random Forest and CNN models. Training status will be updated on the interface.
+Upload to Edge Impulse:
+
+Upload processed audio files to the Edge Impulse platform for further in-depth analysis.
+Contact Information:
+
 Email: Shofiyur2015@gmail.com
-LinkedIn: linkedin.com/in/Mochamad Shofiyur Rochman
+LinkedIn: linkedin.com/in/Mochamad-Shofiyur-Rochman
 GitHub: github.com/ShofiyurRochman
-
+This software leverages advanced machine learning techniques to enhance the security and reliability of voice-based authentication systems by effectively distinguishing between synthetic and human-generated voices. The integration of Convolutional Neural Networks and Random Forest algorithms ensures high accuracy and robustness, addressing critical challenges in the realm of cybersecurity and digital trust.
